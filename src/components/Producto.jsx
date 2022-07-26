@@ -10,7 +10,9 @@ const Producto = ({ producto, productos, carrito, setCarrito }) => {
     setCarrito([...carrito, ...produc]);
   };
   const eliminarProducto = (id) => {
- console.log(id);
+ const newArray = carrito.filter(item=> item.id !==id)
+
+ setCarrito([...newArray]);
   };
 
   return (

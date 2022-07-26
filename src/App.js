@@ -30,7 +30,7 @@ function App() {
           setCarrito={setCarrito}
         />
       ))}
-      <Carrito carrito={carrito} />
+      <Carrito carrito={carrito} setCarrito={setCarrito} />
       <Footer fecha={fecha} />
     </Fragment>
   );
